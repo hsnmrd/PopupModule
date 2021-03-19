@@ -1,0 +1,2 @@
+include ':popup_module'
+rootProject.name = "PopupModule"

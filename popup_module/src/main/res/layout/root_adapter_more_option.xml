@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.PopupModule"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layoutDirection="ltr"
+    android:id="@+id/cv_adapter_more_option_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentPaddingTop="15dp"
+    app:contentPaddingBottom="15dp"
+    app:contentPaddingLeft="15dp"
+    app:contentPaddingRight="15dp"
+    app:rippleColor="?attr/popup_module_purpleTransparent"
+    app:cardBackgroundColor="?attr/popup_module_white"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="0dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_adapter_more_option_root_icon"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:visibility="gone"
+            app:tint="?attr/popup_module_purple"/>
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="0dp"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_adapter_more_option_root_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="@font/medium"
+            android:textColor="?attr/popup_module_black"
+            android:textSize="@dimen/_14sdp"/>
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="0dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_adapter_more_option_root_check"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/root_ic_check"
+            app:tint="?attr/popup_module_green"/>
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="0dp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

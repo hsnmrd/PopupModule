@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    android:theme="@style/Theme.PopupModule"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp"
+    android:background="?attr/popup_module_transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_popup_more_option_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="?attr/popup_module_transparent"
+        tools:itemCount="1"
+        tools:listitem="@layout/root_adapter_more_option"/>
+
+</LinearLayout>

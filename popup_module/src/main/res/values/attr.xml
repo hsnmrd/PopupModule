@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="popup_module_white" format="color" />
+    <attr name="popup_module_whiteTransparent" format="color" />
+    <attr name="popup_module_black" format="color" />
+    <attr name="popup_module_green" format="color" />
+    <attr name="popup_module_blue" format="color" />
+    <attr name="popup_module_gray" format="color" />
+    <attr name="popup_module_orange" format="color" />
+    <attr name="popup_module_purple" format="color" />
+    <attr name="popup_module_purpleTransparent" format="color" />
+    <attr name="popup_module_red" format="color" />
+    <attr name="popup_module_transparent" format="color" />
+
+    <attr name="popup_module_dr_spinner" format="integer" />
+
+</resources>
