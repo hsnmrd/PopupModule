@@ -18,7 +18,6 @@ internal class PopupMenuSetting(var listener: ((view: View, popupWindow: PopupWi
     private var popupWindow: PopupWindow? = null
     private var dimPopupWindow: PopupWindow? = null
     
-    
     @SuppressLint("ClickableViewAccessibility")
     fun showPopup(context: Activity, targetView: View, layout: Int, isAutoClick: Boolean = true): PopupWindow? {
         val layoutInflater: LayoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
