@@ -9,12 +9,12 @@
     android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/tv_error_empty_field_title"
+        android:id="@+id/popup_module_tv_error_empty_field_title"
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_weight="1"
         android:focusable="true"
-        android:fontFamily="@font/medium"
+        android:fontFamily="@font/popup_module_medium"
         android:ellipsize="marquee"
         android:singleLine="true"
         android:marqueeRepeatLimit="marquee_forever"
@@ -26,7 +26,7 @@
         android:text="وارد کردن "/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_error_empty_field_close"
+        android:id="@+id/popup_module_fab_error_empty_field_close"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:backgroundTint="?attr/popup_module_transparent"

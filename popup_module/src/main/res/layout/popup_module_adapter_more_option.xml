@@ -6,7 +6,7 @@
     android:orientation="horizontal"
     android:gravity="center"
     android:layoutDirection="ltr"
-    android:id="@+id/cv_adapter_more_option_root"
+    android:id="@+id/popup_module_cv_adapter_more_option_root"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:contentPaddingTop="15dp"
@@ -30,7 +30,7 @@
             android:layout_height="0dp"/>
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/iv_adapter_more_option_root_icon"
+            android:id="@+id/popup_module_iv_adapter_more_option_root_icon"
             android:layout_width="@dimen/_16sdp"
             android:layout_height="@dimen/_16sdp"
             android:visibility="gone"
@@ -41,12 +41,12 @@
             android:layout_height="0dp"/>
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tv_adapter_more_option_root_title"
+            android:id="@+id/popup_module_tv_adapter_more_option_root_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="right"
-            android:fontFamily="@font/medium"
+            android:fontFamily="@font/popup_module_medium"
             android:textColor="?attr/popup_module_black"
             android:textSize="@dimen/_14sdp"/>
 
@@ -55,7 +55,7 @@
             android:layout_height="0dp"/>
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/iv_adapter_more_option_root_check"
+            android:id="@+id/popup_module_iv_adapter_more_option_root_check"
             android:layout_width="@dimen/_18sdp"
             android:layout_height="@dimen/_18sdp"
             android:visibility="gone"

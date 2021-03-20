@@ -18,6 +18,6 @@
         android:layout_marginBottom="5dp"
         android:background="?attr/popup_module_transparent"
         tools:itemCount="1"
-        tools:listitem="@layout/root_adapter_more_option"/>
+        tools:listitem="@layout/popup_module_adapter_more_option"/>
 
 </LinearLayout>

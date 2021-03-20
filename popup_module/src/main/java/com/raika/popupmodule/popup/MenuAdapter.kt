@@ -20,7 +20,7 @@ class MenuAdapter(private val itemClick: (MenuModel, position: Int) -> Unit) : R
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val itemView: View = LayoutInflater.from(parent.context)
-            .inflate(R.layout.root_adapter_more_option, parent, false)
+            .inflate(R.layout.popup_module_adapter_more_option, parent, false)
         return MyViewHolderItem(itemView)
     }
 
@@ -70,10 +70,10 @@ class MenuAdapter(private val itemClick: (MenuModel, position: Int) -> Unit) : R
     }
 
     internal inner class MyViewHolderItem(view: View) : RecyclerView.ViewHolder(view) {
-        val cvRoot = view.findViewById<MaterialCardView>(R.id.cv_adapter_more_option_root)
-        val tvTitle = view.findViewById<TextView>(R.id.tv_adapter_more_option_root_title)
-        val ivIcon = view.findViewById<AppCompatImageView>(R.id.iv_adapter_more_option_root_icon)
-        val ivCheck = view.findViewById<AppCompatImageView>(R.id.iv_adapter_more_option_root_check)
+        val cvRoot = view.findViewById<MaterialCardView>(R.id.popup_module_cv_adapter_more_option_root)
+        val tvTitle = view.findViewById<TextView>(R.id.popup_module_tv_adapter_more_option_root_title)
+        val ivIcon = view.findViewById<AppCompatImageView>(R.id.popup_module_iv_adapter_more_option_root_icon)
+        val ivCheck = view.findViewById<AppCompatImageView>(R.id.popup_module_iv_adapter_more_option_root_check)
     }
 
 

@@ -7,7 +7,7 @@ import android.widget.PopupWindow
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.raika.popupmodule.R
-import com.raika.popupmodule.attr.ResAttribute
+import com.raika.popupmodule.attr.PopupModuleResAttribute
 
 class PopupMenuRoot {
     companion object {
@@ -22,7 +22,7 @@ data class TaskMenuModel(
 data class ViewCreateModel(var view: View, var popupWindow: PopupWindow?, var dimPopupWindow: PopupWindow?)
 
 
-fun Context.showPopupWhenTouch(
+fun Context.showPopupOnTouch(
     targetView: View,
     layout: Int,
     onViewCreate: (ViewCreateModel) -> Unit,
@@ -32,11 +32,11 @@ fun Context.showPopupWhenTouch(
         onViewCreate(ViewCreateModel(view, popupWindow, dimPopupWindow))
         view.rootView.height
     }
-            .setBackground(ResAttribute(this, R.attr.popup_module_dr_spinner).getDrawable())
+            .setBackground(PopupModuleResAttribute(this, R.attr.popup_module_dr_spinner).getDrawable())
             .showPopup(this as Activity, targetView, layout)
 }
 
-fun Context.showPopupMenuWhenTouch(
+fun Context.showPopupMenuOnTouch(
     targetView: View,
     dataList: MutableList<MenuModel> = emptyArray<MenuModel>().toMutableList(),
     onItemClick: ((TaskMenuModel) -> Unit)? = null,
@@ -61,16 +61,16 @@ fun Context.showPopupMenuWhenTouch(
         val height: Int = rvRoot.measuredHeight
         height
     }
-            .setBackground(ResAttribute(this, R.attr.popup_module_dr_spinner).getDrawable())
+            .setBackground(PopupModuleResAttribute(this, R.attr.popup_module_dr_spinner).getDrawable())
             .showPopup(
                     this as Activity,
                     targetView,
-                    R.layout.root_popup_more_option
+                    R.layout.popup_module_root_popup_more_option
             )
 }
 
 
-fun Context.showPopupWhenClicked(
+fun Context.showPopupOnClicked(
     targetView: View,
     layout: Int,
     onViewCreate: (ViewCreateModel) -> Unit,
@@ -80,11 +80,11 @@ fun Context.showPopupWhenClicked(
         onViewCreate(ViewCreateModel(view, popupWindow, dimPopupWindow))
         view.rootView.height
     }
-            .setBackground(ResAttribute(this, R.attr.popup_module_dr_spinner).getDrawable())
+            .setBackground(PopupModuleResAttribute(this, R.attr.popup_module_dr_spinner).getDrawable())
             .showPopup(this as Activity, targetView, layout, false)
 }
 
-fun Context.showPopupMenuWhenClicked(
+fun Context.showPopupMenuOnClicked(
     targetView: View,
     dataList: MutableList<MenuModel> = emptyArray<MenuModel>().toMutableList(),
     onItemClick: ((TaskMenuModel) -> Unit)? = null,
@@ -109,7 +109,7 @@ fun Context.showPopupMenuWhenClicked(
         val height: Int = rvRoot.measuredHeight
         height
     }
-            .setBackground(ResAttribute(this, R.attr.popup_module_dr_spinner).getDrawable())
-            .showPopup(this as Activity, targetView, R.layout.root_popup_more_option, false)
+            .setBackground(PopupModuleResAttribute(this, R.attr.popup_module_dr_spinner).getDrawable())
+            .showPopup(this as Activity, targetView, R.layout.popup_module_root_popup_more_option, false)
     
 }
