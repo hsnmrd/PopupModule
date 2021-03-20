@@ -59,7 +59,7 @@
             android:layout_width="@dimen/_18sdp"
             android:layout_height="@dimen/_18sdp"
             android:visibility="gone"
-            app:srcCompat="@drawable/root_ic_check"
+            app:srcCompat="@drawable/popup_module_root_ic_check"
             app:tint="?attr/popup_module_green"/>
 
         <View

@@ -21,7 +21,7 @@
         <item name="popup_module_red">@color/popup_module_red_light</item>
         <item name="popup_module_transparent">@color/popup_module_transparent_light</item>
 
-        <item name="popup_module_dr_spinner">@drawable/root_dr_spinner_light</item>
+        <item name="popup_module_dr_spinner">@drawable/popup_module_root_dr_spinner_light</item>
 
 
     </style>
